@@ -2,7 +2,7 @@
 
 ## Plan of work
 
-_ configure project:_
+_configure project:_
 
 - dependencies (react, reactdom, redux, react-router-dom, reselect, axios, webpack, ts-loader, typescript, semantic-ui-react) 
 - include dev dependencies
