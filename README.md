@@ -73,7 +73,7 @@ Libraries used:
 - *TBD. test async actions with moxios*
 
 
-__Run__
+__Run in DEV mode__
 
 ```bash
     $ yarn start
@@ -82,3 +82,9 @@ __Run__
 Head to [http://localhost:8080](http://localhost:8080)
 
 have some fun
+
+__Build__
+
+```bash
+    $ yarn run build
+```
