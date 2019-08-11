@@ -1,0 +1,75 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "env": {
+        "node": true,
+        "commonjs": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "indent": [2, 4, { "SwitchCase": 1 } ],
+        "react/jsx-no-bind": [2, {
+            "allowArrowFunctions": true,
+            "allowBind": false,
+            "ignoreRefs": true
+        }],
+        "jsx-quotes": [2, "prefer-double"],
+        "react/no-did-update-set-state": 2,
+        "react/no-unknown-property": 2,
+        "react/no-unused-prop-types": 2,
+        "react/prop-types": 1,
+        "react/react-in-jsx-scope": 2,
+        "react/jsx-indent": [2, 4],
+        "react-hooks/rules-of-hooks": 2,
+        "react-hooks/exhaustive-deps": 1,
+        "@typescript-eslint/no-var-requires": 1,
+        "@typescript-eslint/restrict-plus-operands": 2,
+        "@typescript-eslint/prefer-interface": 1,
+        "@typescript-eslint/camelcase": [
+            2, { "allow": ["search_repos", "per_page", "total_count", "incomplete_results"] }
+        ],
+        "@typescript-eslint/explicit-member-accessibility": [2, { "accessibility": "no-public" }],
+        "@typescript-eslint/no-non-null-assertion": 1
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.spec.js"
+            ],
+            "env": {
+                "jest": true
+            },
+            "plugins": [
+                "jest"
+            ],
+            "rules": {
+                "jest/no-disabled-tests": "warn",
+                "jest/no-focused-tests": "error",
+                "jest/no-identical-title": "error",
+                "jest/prefer-to-have-length": "warn",
+                "jest/valid-expect": "error"
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+1. configure project
+    a. dependencies (react, reactdom, redux, react-router-dom, reselect, axios, webpack, ts-loader, typescript, semantic-ui-react) 
+    b. include dev dependencies
+    c. put together config files for: webpack, eslint, prettier, typescript, enzyme
+2. create basic project structure
+    a. html entry file
+    b. redux store
+    c. root component with router
+    d. components
+    e. containers
+    f. api
+    g. transport
+    h. reducer helper
+3. check to see everything compiles
+4. add first test
+5. cover with tests basic procedures (store, routes, api, transport)
+6. make sure basic tests pass
+7. create test for components (search, result, pagination, status report)
+8. make components tests pass

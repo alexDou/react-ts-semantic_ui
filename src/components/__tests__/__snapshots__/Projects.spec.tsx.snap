@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects component matches snapshot 1`] = `
+<div
+  className="ui segment f4znuu9"
+>
+  <div
+    className="ui horizontal divider"
+  >
+    <h4
+      className="ui header"
+    >
+      <i
+        aria-hidden="true"
+        className="search icon"
+        onClick={[Function]}
+      />
+      Search repositories
+    </h4>
+  </div>
+  <div
+    className="ui container"
+  >
+    <form
+      className="ui small form f16e15ps"
+      onSubmit={[Function]}
+    >
+      <div
+        className="ui segment"
+      >
+        <div
+          className="fields"
+        >
+          <div
+            className="field fygxhk2"
+          >
+            <div
+              className="ui fluid left icon input"
+            >
+              <input
+                disabled={false}
+                onChange={[Function]}
+                placeholder="discover best ideas"
+                type="text"
+                value="find something"
+              />
+              <i
+                aria-hidden="true"
+                className="search icon"
+                onClick={[Function]}
+              />
+            </div>
+          </div>
+          <button
+            className="ui grey small basic fluid button"
+            onClick={[Function]}
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div
+    className="ui horizontal divider"
+  >
+    <h4
+      className="ui header"
+    >
+      <i
+        aria-hidden="true"
+        className="github square icon"
+        onClick={[Function]}
+      />
+      Matching repositories
+    </h4>
+  </div>
+  <div
+    className="ui container"
+  >
+    <div
+      className="ui green segment"
+    >
+      
+      <div>
+        <div
+          className="ui stackable internally celled three column grid"
+        >
+          <div
+            className="column"
+          >
+            <div
+              className="ui centered card ftf0jd2"
+              onClick={[Function]}
+            >
+              <div
+                className="content"
+              >
+                <img
+                  className="ui mini right floated image"
+                  src="http://pp.dd"
+                />
+                <a
+                  className="header"
+                >
+                  test/repo
+                </a>
+                <div
+                  className="meta"
+                >
+                  qq
+                </div>
+                <div
+                  className="description"
+                >
+                  Owner: 
+                  <strong>
+                    test
+                  </strong>
+                </div>
+                <div
+                  className="description"
+                >
+                  Stars: 
+                  <strong>
+                    infinity
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

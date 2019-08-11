@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmitOnError": true,
+        "baseUrl": ".",
+        "paths": {
+            "@api/*": ["./src/api/*"],
+            "@components/*": ["./src/components/*"],
+            "@containers/*": ["./src/containers/*"],
+            "@t/*": ["./src/typings/*"],
+            "@helpers/*": ["./src/helpers/*"],
+            "@store/*": ["./src/store/*"]
+        }
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

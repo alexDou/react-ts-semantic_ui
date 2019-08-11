@@ -1,0 +1,1547 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusReport component reports failure 1`] = `
+ReactTestInstance {
+  "_fiber": FiberNode {
+    "_debugHookTypes": null,
+    "_debugID": 3,
+    "_debugIsCurrentlyTiming": false,
+    "_debugNeedsRemount": false,
+    "_debugOwner": null,
+    "_debugSource": null,
+    "actualDuration": 0,
+    "actualStartTime": -1,
+    "alternate": null,
+    "child": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 4,
+      "_debugIsCurrentlyTiming": false,
+      "_debugNeedsRemount": false,
+      "_debugOwner": [Circular],
+      "_debugSource": null,
+      "actualDuration": 0,
+      "actualStartTime": -1,
+      "alternate": null,
+      "child": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 5,
+        "_debugIsCurrentlyTiming": false,
+        "_debugNeedsRemount": false,
+        "_debugOwner": [Circular],
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": -1,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugHookTypes": null,
+          "_debugID": 6,
+          "_debugIsCurrentlyTiming": false,
+          "_debugNeedsRemount": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugHookTypes": null,
+            "_debugID": 7,
+            "_debugIsCurrentlyTiming": false,
+            "_debugNeedsRemount": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugHookTypes": null,
+              "_debugID": 8,
+              "_debugIsCurrentlyTiming": false,
+              "_debugNeedsRemount": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugHookTypes": null,
+                "_debugID": 9,
+                "_debugIsCurrentlyTiming": false,
+                "_debugNeedsRemount": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugHookTypes": null,
+                  "_debugID": 11,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugNeedsRemount": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "dependencies": null,
+                  "effectTag": 0,
+                  "elementType": "i",
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "aria-hidden": "true",
+                    "className": "alarm icon",
+                    "onClick": [Function],
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "aria-hidden": "true",
+                    "className": "alarm icon",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": null,
+                  "stateNode": Object {
+                    "children": Array [],
+                    "isHidden": false,
+                    "props": Object {
+                      "aria-hidden": "true",
+                      "className": "alarm icon",
+                      "onClick": [Function],
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [
+                                [Circular],
+                                Object {
+                                  "children": Array [
+                                    Object {
+                                      "children": Array [
+                                        Object {
+                                          "isHidden": false,
+                                          "tag": "TEXT",
+                                          "text": "error occurred",
+                                        },
+                                      ],
+                                      "isHidden": false,
+                                      "props": Object {
+                                        "children": "error occurred",
+                                      },
+                                      "rootContainerInstance": [Circular],
+                                      "tag": "INSTANCE",
+                                      "type": "p",
+                                    },
+                                  ],
+                                  "isHidden": false,
+                                  "props": Object {
+                                    "children": Array [
+                                      null,
+                                      null,
+                                      <p>
+                                        error occurred
+                                      </p>,
+                                    ],
+                                    "className": "content",
+                                  },
+                                  "rootContainerInstance": [Circular],
+                                  "tag": "INSTANCE",
+                                  "type": "div",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": Array [
+                                  undefined,
+                                  <Icon
+                                    as="i"
+                                    name="alarm"
+                                  />,
+                                  <MessageContent>
+                                    <p>
+                                      error occurred
+                                    </p>
+                                  </MessageContent>,
+                                ],
+                                "className": "ui red icon message",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "div",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": <Message
+                              color="red"
+                              content="error occurred"
+                              icon="alarm"
+                            />,
+                            "className": "ui container ui segment",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "i",
+                  },
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "i",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "dependencies": null,
+                "effectTag": 1,
+                "elementType": [Function],
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "as": "i",
+                  "name": "alarm",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "as": "i",
+                  "name": "alarm",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": FiberNode {
+                  "_debugHookTypes": null,
+                  "_debugID": 10,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugNeedsRemount": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugHookTypes": null,
+                    "_debugID": 12,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugNeedsRemount": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugHookTypes": null,
+                      "_debugID": 13,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugNeedsRemount": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": FiberNode {
+                        "_debugHookTypes": null,
+                        "_debugID": 14,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugNeedsRemount": false,
+                        "_debugOwner": null,
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "dependencies": null,
+                        "effectTag": 0,
+                        "elementType": null,
+                        "expirationTime": 0,
+                        "firstEffect": null,
+                        "index": 0,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": "error occurred",
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": "error occurred",
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": null,
+                        "stateNode": Object {
+                          "isHidden": false,
+                          "tag": "TEXT",
+                          "text": "error occurred",
+                        },
+                        "tag": 6,
+                        "treeBaseDuration": 0,
+                        "type": null,
+                        "updateQueue": null,
+                      },
+                      "childExpirationTime": 0,
+                      "dependencies": null,
+                      "effectTag": 0,
+                      "elementType": "p",
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 2,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "error occurred",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": "error occurred",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": Object {
+                        "children": Array [
+                          Object {
+                            "isHidden": false,
+                            "tag": "TEXT",
+                            "text": "error occurred",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": "error occurred",
+                        },
+                        "rootContainerInstance": Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [
+                                Object {
+                                  "children": Array [
+                                    Object {
+                                      "children": Array [],
+                                      "isHidden": false,
+                                      "props": Object {
+                                        "aria-hidden": "true",
+                                        "className": "alarm icon",
+                                        "onClick": [Function],
+                                      },
+                                      "rootContainerInstance": [Circular],
+                                      "tag": "INSTANCE",
+                                      "type": "i",
+                                    },
+                                    Object {
+                                      "children": Array [
+                                        [Circular],
+                                      ],
+                                      "isHidden": false,
+                                      "props": Object {
+                                        "children": Array [
+                                          null,
+                                          null,
+                                          <p>
+                                            error occurred
+                                          </p>,
+                                        ],
+                                        "className": "content",
+                                      },
+                                      "rootContainerInstance": [Circular],
+                                      "tag": "INSTANCE",
+                                      "type": "div",
+                                    },
+                                  ],
+                                  "isHidden": false,
+                                  "props": Object {
+                                    "children": Array [
+                                      undefined,
+                                      <Icon
+                                        as="i"
+                                        name="alarm"
+                                      />,
+                                      <MessageContent>
+                                        <p>
+                                          error occurred
+                                        </p>
+                                      </MessageContent>,
+                                    ],
+                                    "className": "ui red icon message",
+                                  },
+                                  "rootContainerInstance": [Circular],
+                                  "tag": "INSTANCE",
+                                  "type": "div",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": <Message
+                                  color="red"
+                                  content="error occurred"
+                                  icon="alarm"
+                                />,
+                                "className": "ui container ui segment",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "div",
+                            },
+                          ],
+                          "createNodeMock": [Function],
+                          "tag": "CONTAINER",
+                        },
+                        "tag": "INSTANCE",
+                        "type": "p",
+                      },
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "p",
+                      "updateQueue": null,
+                    },
+                    "childExpirationTime": 0,
+                    "dependencies": null,
+                    "effectTag": 0,
+                    "elementType": "div",
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": Array [
+                        null,
+                        null,
+                        <p>
+                          error occurred
+                        </p>,
+                      ],
+                      "className": "content",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": Array [
+                        null,
+                        null,
+                        <p>
+                          error occurred
+                        </p>,
+                      ],
+                      "className": "content",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "isHidden": false,
+                              "tag": "TEXT",
+                              "text": "error occurred",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": "error occurred",
+                          },
+                          "rootContainerInstance": Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [
+                                  Object {
+                                    "children": Array [
+                                      Object {
+                                        "children": Array [],
+                                        "isHidden": false,
+                                        "props": Object {
+                                          "aria-hidden": "true",
+                                          "className": "alarm icon",
+                                          "onClick": [Function],
+                                        },
+                                        "rootContainerInstance": [Circular],
+                                        "tag": "INSTANCE",
+                                        "type": "i",
+                                      },
+                                      [Circular],
+                                    ],
+                                    "isHidden": false,
+                                    "props": Object {
+                                      "children": Array [
+                                        undefined,
+                                        <Icon
+                                          as="i"
+                                          name="alarm"
+                                        />,
+                                        <MessageContent>
+                                          <p>
+                                            error occurred
+                                          </p>
+                                        </MessageContent>,
+                                      ],
+                                      "className": "ui red icon message",
+                                    },
+                                    "rootContainerInstance": [Circular],
+                                    "tag": "INSTANCE",
+                                    "type": "div",
+                                  },
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": <Message
+                                    color="red"
+                                    content="error occurred"
+                                    icon="alarm"
+                                  />,
+                                  "className": "ui container ui segment",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "div",
+                              },
+                            ],
+                            "createNodeMock": [Function],
+                            "tag": "CONTAINER",
+                          },
+                          "tag": "INSTANCE",
+                          "type": "p",
+                        },
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": Array [
+                          null,
+                          null,
+                          <p>
+                            error occurred
+                          </p>,
+                        ],
+                        "className": "content",
+                      },
+                      "rootContainerInstance": Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [
+                                  Object {
+                                    "children": Array [],
+                                    "isHidden": false,
+                                    "props": Object {
+                                      "aria-hidden": "true",
+                                      "className": "alarm icon",
+                                      "onClick": [Function],
+                                    },
+                                    "rootContainerInstance": [Circular],
+                                    "tag": "INSTANCE",
+                                    "type": "i",
+                                  },
+                                  [Circular],
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": Array [
+                                    undefined,
+                                    <Icon
+                                      as="i"
+                                      name="alarm"
+                                    />,
+                                    <MessageContent>
+                                      <p>
+                                        error occurred
+                                      </p>
+                                    </MessageContent>,
+                                  ],
+                                  "className": "ui red icon message",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "div",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": <Message
+                                color="red"
+                                content="error occurred"
+                                icon="alarm"
+                              />,
+                              "className": "ui container ui segment",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "div",
+                          },
+                        ],
+                        "createNodeMock": [Function],
+                        "tag": "CONTAINER",
+                      },
+                      "tag": "INSTANCE",
+                      "type": "div",
+                    },
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "div",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "dependencies": null,
+                  "effectTag": 1,
+                  "elementType": [Function],
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 2,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      null,
+                      null,
+                      <p>
+                        error occurred
+                      </p>,
+                    ],
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": Array [
+                      null,
+                      null,
+                      <p>
+                        error occurred
+                      </p>,
+                    ],
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": null,
+                  "stateNode": null,
+                  "tag": 0,
+                  "treeBaseDuration": 0,
+                  "type": [Function],
+                  "updateQueue": null,
+                },
+                "stateNode": Icon {
+                  "_reactInternalFiber": [Circular],
+                  "_reactInternalInstance": Object {},
+                  "context": Object {},
+                  "handleClick": [Function],
+                  "props": Object {
+                    "as": "i",
+                    "name": "alarm",
+                  },
+                  "refs": Object {},
+                  "state": null,
+                  "updater": Object {
+                    "enqueueForceUpdate": [Function],
+                    "enqueueReplaceState": [Function],
+                    "enqueueSetState": [Function],
+                    "isMounted": [Function],
+                  },
+                },
+                "tag": 1,
+                "treeBaseDuration": 0,
+                "type": [Function],
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "dependencies": null,
+              "effectTag": 0,
+              "elementType": "div",
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  undefined,
+                  <Icon
+                    as="i"
+                    name="alarm"
+                  />,
+                  <MessageContent>
+                    <p>
+                      error occurred
+                    </p>
+                  </MessageContent>,
+                ],
+                "className": "ui red icon message",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  undefined,
+                  <Icon
+                    as="i"
+                    name="alarm"
+                  />,
+                  <MessageContent>
+                    <p>
+                      error occurred
+                    </p>
+                  </MessageContent>,
+                ],
+                "className": "ui red icon message",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "children": Array [
+                  Object {
+                    "children": Array [],
+                    "isHidden": false,
+                    "props": Object {
+                      "aria-hidden": "true",
+                      "className": "alarm icon",
+                      "onClick": [Function],
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            [Circular],
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": <Message
+                              color="red"
+                              content="error occurred"
+                              icon="alarm"
+                            />,
+                            "className": "ui container ui segment",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "i",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "isHidden": false,
+                            "tag": "TEXT",
+                            "text": "error occurred",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": "error occurred",
+                        },
+                        "rootContainerInstance": Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [
+                                [Circular],
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": <Message
+                                  color="red"
+                                  content="error occurred"
+                                  icon="alarm"
+                                />,
+                                "className": "ui container ui segment",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "div",
+                            },
+                          ],
+                          "createNodeMock": [Function],
+                          "tag": "CONTAINER",
+                        },
+                        "tag": "INSTANCE",
+                        "type": "p",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": Array [
+                        null,
+                        null,
+                        <p>
+                          error occurred
+                        </p>,
+                      ],
+                      "className": "content",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            [Circular],
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": <Message
+                              color="red"
+                              content="error occurred"
+                              icon="alarm"
+                            />,
+                            "className": "ui container ui segment",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": Array [
+                    undefined,
+                    <Icon
+                      as="i"
+                      name="alarm"
+                    />,
+                    <MessageContent>
+                      <p>
+                        error occurred
+                      </p>
+                    </MessageContent>,
+                  ],
+                  "className": "ui red icon message",
+                },
+                "rootContainerInstance": Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": <Message
+                          color="red"
+                          content="error occurred"
+                          icon="alarm"
+                        />,
+                        "className": "ui container ui segment",
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "div",
+                    },
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "tag": "INSTANCE",
+                "type": "div",
+              },
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "dependencies": null,
+            "effectTag": 1,
+            "elementType": [Function],
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "color": "red",
+              "content": "error occurred",
+              "icon": "alarm",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "color": "red",
+              "content": "error occurred",
+              "icon": "alarm",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Message {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "handleDismiss": [Function],
+              "props": Object {
+                "color": "red",
+                "content": "error occurred",
+                "icon": "alarm",
+              },
+              "refs": Object {},
+              "state": null,
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 1,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "dependencies": null,
+          "effectTag": 0,
+          "elementType": "div",
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": <Message
+              color="red"
+              content="error occurred"
+              icon="alarm"
+            />,
+            "className": "ui container ui segment",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": <Message
+              color="red"
+              content="error occurred"
+              icon="alarm"
+            />,
+            "className": "ui container ui segment",
+          },
+          "ref": null,
+          "return": [Circular],
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "children": Array [],
+                    "isHidden": false,
+                    "props": Object {
+                      "aria-hidden": "true",
+                      "className": "alarm icon",
+                      "onClick": [Function],
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "i",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "isHidden": false,
+                            "tag": "TEXT",
+                            "text": "error occurred",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": "error occurred",
+                        },
+                        "rootContainerInstance": Object {
+                          "children": Array [
+                            [Circular],
+                          ],
+                          "createNodeMock": [Function],
+                          "tag": "CONTAINER",
+                        },
+                        "tag": "INSTANCE",
+                        "type": "p",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": Array [
+                        null,
+                        null,
+                        <p>
+                          error occurred
+                        </p>,
+                      ],
+                      "className": "content",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": Array [
+                    undefined,
+                    <Icon
+                      as="i"
+                      name="alarm"
+                    />,
+                    <MessageContent>
+                      <p>
+                        error occurred
+                      </p>
+                    </MessageContent>,
+                  ],
+                  "className": "ui red icon message",
+                },
+                "rootContainerInstance": Object {
+                  "children": Array [
+                    [Circular],
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "tag": "INSTANCE",
+                "type": "div",
+              },
+            ],
+            "isHidden": false,
+            "props": Object {
+              "children": <Message
+                color="red"
+                content="error occurred"
+                icon="alarm"
+              />,
+              "className": "ui container ui segment",
+            },
+            "rootContainerInstance": Object {
+              "children": Array [
+                [Circular],
+              ],
+              "createNodeMock": [Function],
+              "tag": "CONTAINER",
+            },
+            "tag": "INSTANCE",
+            "type": "div",
+          },
+          "tag": 5,
+          "treeBaseDuration": 0,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "childExpirationTime": 0,
+        "dependencies": null,
+        "effectTag": 1,
+        "elementType": [Function],
+        "expirationTime": 0,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {
+          "children": <Message
+            color="red"
+            content="error occurred"
+            icon="alarm"
+          />,
+          "className": "ui segment",
+        },
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {
+          "children": <Message
+            color="red"
+            content="error occurred"
+            icon="alarm"
+          />,
+          "className": "ui segment",
+        },
+        "ref": null,
+        "return": [Circular],
+        "selfBaseDuration": 0,
+        "sibling": null,
+        "stateNode": null,
+        "tag": 0,
+        "treeBaseDuration": 0,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "childExpirationTime": 0,
+      "dependencies": null,
+      "effectTag": 1,
+      "elementType": [Function],
+      "expirationTime": 0,
+      "firstEffect": null,
+      "index": 0,
+      "key": null,
+      "lastEffect": null,
+      "memoizedProps": Object {
+        "as": [Function],
+        "children": <Message
+          color="red"
+          content="error occurred"
+          icon="alarm"
+        />,
+      },
+      "memoizedState": null,
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": Object {
+        "as": [Function],
+        "children": <Message
+          color="red"
+          content="error occurred"
+          icon="alarm"
+        />,
+      },
+      "ref": null,
+      "return": [Circular],
+      "selfBaseDuration": 0,
+      "sibling": null,
+      "stateNode": null,
+      "tag": 0,
+      "treeBaseDuration": 0,
+      "type": [Function],
+      "updateQueue": null,
+    },
+    "childExpirationTime": 0,
+    "dependencies": null,
+    "effectTag": 1,
+    "elementType": [Function],
+    "expirationTime": 0,
+    "firstEffect": null,
+    "index": 0,
+    "key": null,
+    "lastEffect": null,
+    "memoizedProps": Object {
+      "failure": true,
+      "message": "error occurred",
+      "ok": false,
+      "pending": false,
+    },
+    "memoizedState": null,
+    "mode": 0,
+    "nextEffect": null,
+    "pendingProps": Object {
+      "failure": true,
+      "message": "error occurred",
+      "ok": false,
+      "pending": false,
+    },
+    "ref": null,
+    "return": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 1,
+      "_debugIsCurrentlyTiming": false,
+      "_debugNeedsRemount": false,
+      "_debugOwner": null,
+      "_debugSource": null,
+      "actualDuration": 0,
+      "actualStartTime": -1,
+      "alternate": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 1,
+        "_debugIsCurrentlyTiming": false,
+        "_debugNeedsRemount": false,
+        "_debugOwner": null,
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": -1,
+        "alternate": [Circular],
+        "child": null,
+        "childExpirationTime": 0,
+        "dependencies": null,
+        "effectTag": 0,
+        "elementType": null,
+        "expirationTime": 1073741823,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": null,
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": null,
+        "selfBaseDuration": 0,
+        "sibling": null,
+        "stateNode": FiberRootNode {
+          "callbackExpirationTime": 0,
+          "callbackNode": null,
+          "containerInfo": Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [],
+                        "isHidden": false,
+                        "props": Object {
+                          "aria-hidden": "true",
+                          "className": "alarm icon",
+                          "onClick": [Function],
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "i",
+                      },
+                      Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "isHidden": false,
+                                "tag": "TEXT",
+                                "text": "error occurred",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": "error occurred",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "p",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": Array [
+                            null,
+                            null,
+                            <p>
+                              error occurred
+                            </p>,
+                          ],
+                          "className": "content",
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "div",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": Array [
+                        undefined,
+                        <Icon
+                          as="i"
+                          name="alarm"
+                        />,
+                        <MessageContent>
+                          <p>
+                            error occurred
+                          </p>
+                        </MessageContent>,
+                      ],
+                      "className": "ui red icon message",
+                    },
+                    "rootContainerInstance": [Circular],
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": <Message
+                    color="red"
+                    content="error occurred"
+                    icon="alarm"
+                  />,
+                  "className": "ui container ui segment",
+                },
+                "rootContainerInstance": [Circular],
+                "tag": "INSTANCE",
+                "type": "div",
+              },
+            ],
+            "createNodeMock": [Function],
+            "tag": "CONTAINER",
+          },
+          "context": Object {},
+          "current": [Circular],
+          "finishedExpirationTime": 0,
+          "finishedWork": null,
+          "firstBatch": null,
+          "firstPendingTime": 0,
+          "hydrate": false,
+          "interactionThreadID": 1,
+          "lastPendingTime": 0,
+          "memoizedInteractions": Set {},
+          "pendingChildren": null,
+          "pendingContext": null,
+          "pendingInteractionMap": Map {},
+          "pingCache": null,
+          "pingTime": 0,
+          "tag": 0,
+          "timeoutHandle": -1,
+        },
+        "tag": 3,
+        "treeBaseDuration": 0,
+        "type": null,
+        "updateQueue": Object {
+          "baseState": null,
+          "firstCapturedEffect": null,
+          "firstCapturedUpdate": null,
+          "firstEffect": null,
+          "firstUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <StatusReport
+                failure={true}
+                message="error occurred"
+                ok={false}
+                pending={false}
+              />,
+            },
+            "priority": 97,
+            "suspenseConfig": null,
+            "tag": 0,
+          },
+          "lastCapturedEffect": null,
+          "lastCapturedUpdate": null,
+          "lastEffect": null,
+          "lastUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <StatusReport
+                failure={true}
+                message="error occurred"
+                ok={false}
+                pending={false}
+              />,
+            },
+            "priority": 97,
+            "suspenseConfig": null,
+            "tag": 0,
+          },
+        },
+      },
+      "child": [Circular],
+      "childExpirationTime": 0,
+      "dependencies": null,
+      "effectTag": 0,
+      "elementType": null,
+      "expirationTime": 0,
+      "firstEffect": [Circular],
+      "index": 0,
+      "key": null,
+      "lastEffect": [Circular],
+      "memoizedProps": null,
+      "memoizedState": Object {
+        "element": <StatusReport
+          failure={true}
+          message="error occurred"
+          ok={false}
+          pending={false}
+        />,
+      },
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": null,
+      "ref": null,
+      "return": null,
+      "selfBaseDuration": 0,
+      "sibling": null,
+      "stateNode": FiberRootNode {
+        "callbackExpirationTime": 0,
+        "callbackNode": null,
+        "containerInfo": Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [],
+                      "isHidden": false,
+                      "props": Object {
+                        "aria-hidden": "true",
+                        "className": "alarm icon",
+                        "onClick": [Function],
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "i",
+                    },
+                    Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "isHidden": false,
+                              "tag": "TEXT",
+                              "text": "error occurred",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": "error occurred",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "p",
+                        },
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": Array [
+                          null,
+                          null,
+                          <p>
+                            error occurred
+                          </p>,
+                        ],
+                        "className": "content",
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "div",
+                    },
+                  ],
+                  "isHidden": false,
+                  "props": Object {
+                    "children": Array [
+                      undefined,
+                      <Icon
+                        as="i"
+                        name="alarm"
+                      />,
+                      <MessageContent>
+                        <p>
+                          error occurred
+                        </p>
+                      </MessageContent>,
+                    ],
+                    "className": "ui red icon message",
+                  },
+                  "rootContainerInstance": [Circular],
+                  "tag": "INSTANCE",
+                  "type": "div",
+                },
+              ],
+              "isHidden": false,
+              "props": Object {
+                "children": <Message
+                  color="red"
+                  content="error occurred"
+                  icon="alarm"
+                />,
+                "className": "ui container ui segment",
+              },
+              "rootContainerInstance": [Circular],
+              "tag": "INSTANCE",
+              "type": "div",
+            },
+          ],
+          "createNodeMock": [Function],
+          "tag": "CONTAINER",
+        },
+        "context": Object {},
+        "current": [Circular],
+        "finishedExpirationTime": 0,
+        "finishedWork": null,
+        "firstBatch": null,
+        "firstPendingTime": 0,
+        "hydrate": false,
+        "interactionThreadID": 1,
+        "lastPendingTime": 0,
+        "memoizedInteractions": Set {},
+        "pendingChildren": null,
+        "pendingContext": null,
+        "pendingInteractionMap": Map {},
+        "pingCache": null,
+        "pingTime": 0,
+        "tag": 0,
+        "timeoutHandle": -1,
+      },
+      "tag": 3,
+      "treeBaseDuration": 0,
+      "type": null,
+      "updateQueue": Object {
+        "baseState": Object {
+          "element": <StatusReport
+            failure={true}
+            message="error occurred"
+            ok={false}
+            pending={false}
+          />,
+        },
+        "firstCapturedEffect": null,
+        "firstCapturedUpdate": null,
+        "firstEffect": null,
+        "firstUpdate": null,
+        "lastCapturedEffect": null,
+        "lastCapturedUpdate": null,
+        "lastEffect": null,
+        "lastUpdate": null,
+      },
+    },
+    "selfBaseDuration": 0,
+    "sibling": null,
+    "stateNode": null,
+    "tag": 0,
+    "treeBaseDuration": 0,
+    "type": [Function],
+    "updateQueue": null,
+  },
+}
+`;
