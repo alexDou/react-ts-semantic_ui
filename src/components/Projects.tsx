@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { compose } from 'redux';
+import React, { Component, ReactElement } from 'react';
+import { compose, Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import {
@@ -7,7 +7,7 @@ import {
 } from 'semantic-ui-react';
 import { style } from 'typestyle';
 
-import { AppState, ProjectsProps, ThunkActionCreate } from '@t/app';
+import { AppState, ProjectsProps, StoreAction } from '@t/app';
 import * as actions from '@store/actions';
 import SearchContainer from '@containers/search';
 import StatusReport from '@components/StatusReport';
@@ -27,13 +27,12 @@ const segmentStyle = style({
             marginBottom: '120px'
         }
     }
-})
+});
 
-class Projects extends Component<AppState & ProjectsProps & RouteComponentProps, AppState> {
+class Projects extends Component<AppState & ProjectsProps & RouteComponentProps, Readonly<keyof AppState>> {
 
     componentDidMount(): void {
         const { session, repos, getSearch } = this.props;
-
         const query = repos.query || '';
 
         if (!session.pending && repos.shouldFetch) {
@@ -41,23 +40,20 @@ class Projects extends Component<AppState & ProjectsProps & RouteComponentProps,
         }
     }
 
-    shouldComponentUpdate(
-        nextProps: Readonly<AppState & RouteComponentProps>,
-        nextState: Readonly<AppState>, nextContext: any
-    ): boolean {
+    // shouldComponentUpdate(
+    //     nextProps: Readonly<AppState & RouteComponentProps>,
+    //     nextState: Readonly<AppState>
+    // ): boolean {
+    //
+    //     return (
+    //         nextProps.repos.query !== this.props.repos.query
+    //         || nextProps.repos.page !== this.props.repos.page
+    //         || nextProps.repos.per_page !== this.props.repos.per_page
+    //         || nextProps.session.ok !== this.props.session.ok
+    //     );
+    // }
 
-        return (
-            nextProps.repos.query !== this.props.repos.query
-            || nextProps.repos.page !== this.props.repos.page
-            || nextProps.repos.per_page !== this.props.repos.per_page
-            || nextProps.session.ok !== this.props.session.ok
-        );
-    }
-
-    componentDidUpdate(
-        prevProps: Readonly<AppState & ProjectsProps & RouteComponentProps>,
-        prevState: Readonly<AppState>, snapshot?: any
-    ): void {
+    componentDidUpdate(): void {
         const { session, repos, getSearch } = this.props;
 
         const pageNum = repos.page || 1;
@@ -69,7 +65,7 @@ class Projects extends Component<AppState & ProjectsProps & RouteComponentProps,
         }
     }
 
-    displayItems() {
+    displayItems(): ReactElement {
         const { session, repos } = this.props;
 
         const pageNum = repos.page || 1;
@@ -81,7 +77,7 @@ class Projects extends Component<AppState & ProjectsProps & RouteComponentProps,
                 {notFound ? <Message color="red" content="No repos found by this query" /> : '' }
                 <Responsive>
                     <Grid celled="internally" stackable columns={3}>
-                        {items.map((it: any) =>
+                        {items.map((it: any): ReactElement =>
                             <Grid.Column key={it.id}>
                                 <Card centered className={cardStyle}>
                                     <Card.Content>
@@ -109,13 +105,13 @@ class Projects extends Component<AppState & ProjectsProps & RouteComponentProps,
         )
     }
 
-    handlePageChange = (page: number) => {
+    handlePageChange = (page: number): void => {
         const { setPage } = this.props;
 
         setPage(page, true);
-    }
+    };
 
-    render() {
+    render(): ReactElement {
         const { session, repos } = this.props;
 
         const pageNum = repos.page || 1;
@@ -159,12 +155,12 @@ class Projects extends Component<AppState & ProjectsProps & RouteComponentProps,
     }
 }
 
-const mapStateToProps = (state: AppState) => state;
+const mapStateToProps = (state: AppState): AppState => state;
 
-const mapDispatchToProps = (dispatch: ThunkActionCreate) => {
+const mapDispatchToProps = (dispatch: Dispatch): Partial<AppState> => {
     return {
-        getSearch: (query: string, page: number) => dispatch(actions.repos.getSearch(query, page)),
-        setPage: (page: number, shouldFetch: boolean) => dispatch(actions.repos.setPage(page, shouldFetch)),
+        getSearch: (query: string, page: number): StoreAction => dispatch(actions.repos.getSearch(query, page)),
+        setPage: (page: number, shouldFetch: boolean): StoreAction => dispatch(actions.repos.setPage(page, shouldFetch)),
     };
 };
 

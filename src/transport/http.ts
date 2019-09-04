@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 
-const http = () =>
+const http = (): AxiosInstance =>
     // config defaults. all optional
     // auth, timeouts, headers, proxy, etc
     axios.create({

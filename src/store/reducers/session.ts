@@ -10,31 +10,34 @@ const initialState: SessionState = {
     message: ''
 };
 
-export default reducer(initialState, {
-    [REQ_PENDING]: (state: SessionState): SessionState => {
-        return {
-            ...state,
-            pending: true,
-            ok: false
-        };
-    },
+export default reducer({
+    initState: initialState,
+    handlers: {
+        [REQ_PENDING]: (state: SessionState): SessionState => {
+            return {
+                ...state,
+                pending: true,
+                ok: false
+            };
+        },
 
-    [REQ_FULFILLED]: (): SessionState => {
-        return {
-            ...initialState
-        };
-    },
+        [REQ_FULFILLED]: (): SessionState => {
+            return {
+                ...initialState
+            };
+        },
 
-    [REQ_FAILED]: (
-        state: SessionState,
-        action: SessionAction
-    ): SessionState => {
-        return {
-            ...state,
-            pending: false,
-            failure: true,
-            ok: false,
-            ...action.payload
-        };
+        [REQ_FAILED]: (
+            state: SessionState,
+            action: SessionAction
+        ): SessionState => {
+            return {
+                ...state,
+                pending: false,
+                failure: true,
+                ok: false,
+                ...action.payload
+            };
+        }
     }
 });

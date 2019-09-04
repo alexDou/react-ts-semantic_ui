@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import {
     BrowserRouter as Router,
     Route,
@@ -10,7 +10,7 @@ import Root from './containers/Root';
 import Home from './components/Home';
 import Projects from './components/Projects';
 
-const App = () => {
+const App = (): ReactElement => {
     return (
         <Root iniStore={{} as any}>
             <Router>

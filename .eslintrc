@@ -41,6 +41,8 @@
         "react/prop-types": 1,
         "react/react-in-jsx-scope": 2,
         "react/jsx-indent": [2, 4],
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
         "react-hooks/rules-of-hooks": 2,
         "react-hooks/exhaustive-deps": 1,
         "@typescript-eslint/no-var-requires": 1,
@@ -50,7 +52,8 @@
             2, { "allow": ["search_repos", "per_page", "total_count", "incomplete_results"] }
         ],
         "@typescript-eslint/explicit-member-accessibility": [2, { "accessibility": "no-public" }],
-        "@typescript-eslint/no-non-null-assertion": 1
+        "@typescript-eslint/no-non-null-assertion": 0,
+        "@typescript-eslint/no-explicit-any": 0
     },
     "overrides": [
         {

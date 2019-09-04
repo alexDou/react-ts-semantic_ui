@@ -1,14 +1,12 @@
-if (typeof process.env.NODE_ENV === 'undefined') {
-    process.env.NODE_ENV = 'development';
-}
-
+const mode = process.env.NODE_ENV || 'development';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const webpack = require('webpack');
-//const HtmlWebPackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const webpackConfig = {
-    mode: process.env.NODE_ENV,
+    mode,
     devtool: 'inline-source-map',
     context: path.join(__dirname, '/src'),
     entry: 'index.tsx',
@@ -31,23 +29,30 @@ const webpackConfig = {
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
-                NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+                NODE_ENV: JSON.stringify(mode),
             },
         }),
-        // new HtmlWebPackPlugin({
-        //     template: './index.html',
-        //     filename: './index.html',
-        // }),
     ],
     module: {
         rules: [
             {
+                enforce: 'pre',
                 test: /\.tsx?$/,
-                loader: 'ts-loader',
+                exclude: /node_modules/,
+                loader: 'eslint-loader',
+                options: {
+                    fix: mode !== 'production',
+                    failOnWarning: mode !== 'production',
+                    failOnError: true,
+                },
+            },
+            {
+                test: /\.tsx?$/,
+                loader: ['ts-loader'],
             },
             {
                 test: /\.css$/,
-                use: [{ loader: 'style-loader' }, { loader: 'css-loader', options: { url: true } }],
+                use: [{ loader: 'style-loader' }, { loader: 'css-loader?sourceMap', options: { url: true } }],
             },
             {
                 test: /\.(png|swf|jpg|otf|eot|ttf|woff|woff2)(\?.*)?$/,
@@ -59,6 +64,9 @@ const webpackConfig = {
                 ],
             },
         ],
+    },
+    optimization: {
+        noEmitOnErrors: true
     }
 };
 
@@ -67,7 +75,7 @@ const htmlRule = {
     use: [{ loader: 'html-loader', options: { minimize: false }} ],
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (mode === 'production') {
     htmlRule.use[0].options.minimize = true;
     webpackConfig.devtool = 'nosources-source-map';
 } else {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 import { Button, Form, Segment } from 'semantic-ui-react';
 import { style } from 'typestyle';
 
@@ -6,14 +6,14 @@ import { SearchFormProps } from '@t/app';
 
 const inputStyle = style({
     minWidth: '260px'
-})
+});
 
-const SearchForm: React.FC<SearchFormProps> = (props) => {
+const SearchForm: React.FC<SearchFormProps> = (props: SearchFormProps): ReactElement => {
     const { size, stacked, color, disabled, query, onFormSubmit } = props;
     const [q, setQ] = useState(query);
 
-    const handleChange = (e: any) => setQ(e.target.value);
-    const handleSubmit = () => onFormSubmit(q as string);
+    const handleChange = (e: any): void => setQ(e.target.value);
+    const handleSubmit = (): void => onFormSubmit(q as string);
 
     const formStyle = style({
         $nest: {
@@ -24,7 +24,7 @@ const SearchForm: React.FC<SearchFormProps> = (props) => {
         }
     });
 
-    const form = () =>
+    const form = (): ReactElement =>
         <>
             <Form.Input
                 disabled={disabled}
@@ -38,9 +38,9 @@ const SearchForm: React.FC<SearchFormProps> = (props) => {
                 onChange={handleChange}
             />
             <Button disabled={disabled} basic color={color} fluid size={size}>
-            Search
+                Search
             </Button>
-        </>
+        </>;
 
     return (
         <Form size={size} onSubmit={handleSubmit} className={formStyle}>
@@ -52,6 +52,6 @@ const SearchForm: React.FC<SearchFormProps> = (props) => {
             </Segment>
         </Form>
     )
-}
+};
 
 export default SearchForm;

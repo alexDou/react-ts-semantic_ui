@@ -1,4 +1,4 @@
-import React, { SyntheticEvent } from 'react';
+import React, { ReactElement, SyntheticEvent } from 'react';
 import { Container, Pagination, PaginationProps } from 'semantic-ui-react';
 import { style } from 'typestyle';
 
@@ -28,15 +28,13 @@ const footerPaginationStyle = style({
     }
 });
 
-const Footer = ({ pages, active, pageChange }: TFooterProps) => {
-
+const Footer = ({ pages, active, pageChange }: TFooterProps): ReactElement => {
     const total = Math.floor(pages / apiConfig.defaults.per_page);
 
-    const handlePageChange = (e: SyntheticEvent, d: PaginationProps) => {
+    const handlePageChange = (e: SyntheticEvent, d: PaginationProps): void => {
         const turnPage = parseInt(`${d.activePage}`);
-
         pageChange(turnPage);
-    }
+    };
 
     return (total && total > 1 ?
         <Container className={footerStyle}>
@@ -49,6 +47,6 @@ const Footer = ({ pages, active, pageChange }: TFooterProps) => {
         </Container>
         : <></>
     )
-}
+};
 
 export default Footer;

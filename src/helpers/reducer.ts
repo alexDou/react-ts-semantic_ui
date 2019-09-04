@@ -6,8 +6,13 @@
  * @param handlers Object
  * @return {Function} reducer handler
  */
-export default function reducer(initState: any, handlers: any) {
-    return (state = initState, action: any = {}) => {
+import { AppState, StoreAction } from '@t/app';
+
+export default function reducer<K extends keyof AppState>({ initState, handlers }:
+{ initState: AppState[K]; handlers: any }): Function
+{
+    // INVALID ACTION just a typescript shtick here. not handled anywhere
+    return (state: AppState[K] = initState, action: StoreAction = { type: 'INVALID ACTION' }): AppState[K] => {
         if (handlers[action.type]) {
             return handlers[action.type](state, action);
         } else if (handlers['DEFAULT']) {

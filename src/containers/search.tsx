@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { compose } from 'redux';
+import React, { Component, ReactElement } from 'react';
+import { compose, Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 
-import { AppState, SearchProps, ThunkActionCreate } from '@t/app';
+import { AppState, SearchProps, StoreAction } from '@t/app';
 import * as actions from '@store/actions';
 import SearchForm from '@components/SearchForm';
 
-class SearchContainer extends Component<AppState & SearchProps & RouteComponentProps, AppState> {
+class SearchContainer extends Component<AppState & SearchProps & RouteComponentProps, Readonly<keyof AppState>> {
     private static defaultProps = {
         size: 'large',
         color: 'black',
@@ -15,15 +15,14 @@ class SearchContainer extends Component<AppState & SearchProps & RouteComponentP
         disabled: false,
     };
 
-    onFormSubmit = (searchQ: string) => {
-        const { setSearchQuery } = this.props;
+    onFormSubmit = (searchQ: string): void => {
+        const { setSearchQuery, history } = this.props;
 
         setSearchQuery(searchQ);
-
-        this.props.history.push('/projects');
+        history.push('/projects');
     };
 
-    render() {
+    render(): ReactElement {
         const { size, color, stacked, disabled, repos } = this.props;
 
         return (
@@ -39,17 +38,17 @@ class SearchContainer extends Component<AppState & SearchProps & RouteComponentP
     }
 }
 
-const mapStateToProps = (state: AppState) => {
+const mapStateToProps = (state: AppState): Partial<AppState> => {
     return {
         session: { ...state.session },
         repos: { ...state.repos }
     }
 };
 
-const mapDispatchToProps = (dispatch: ThunkActionCreate) => {
+const mapDispatchToProps = (dispatch: Dispatch): Partial<AppState> => {
     return {
-        setSearchQuery: (query: string) => dispatch(actions.repos.setSearchQuery(query)),
-        setPage: (page: number, shouldFetch: boolean) => dispatch(actions.repos.setPage(page, shouldFetch)),
+        setSearchQuery: (query: string): StoreAction => dispatch(actions.repos.setSearchQuery(query)),
+        setPage: (page: number, shouldFetch: boolean): StoreAction => dispatch(actions.repos.setPage(page, shouldFetch)),
     };
 };
 

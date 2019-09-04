@@ -1,11 +1,12 @@
 import { REQ_PENDING, REQ_FULFILLED, REQ_FAILED } from '../action_types';
+import { StoreAction } from '@t/app';
 
 const actions = {
-    pending: () => ({ type: REQ_PENDING }),
+    pending: (): StoreAction => ({ type: REQ_PENDING }),
 
-    fulfilled: () => ({ type: REQ_FULFILLED }),
+    fulfilled: (): StoreAction => ({ type: REQ_FULFILLED }),
 
-    failed: (message: string) => {
+    failed: (message: string): StoreAction => {
         return {
             type: REQ_FAILED,
             payload: { message }

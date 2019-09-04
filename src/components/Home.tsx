@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import {
     Segment, Container, Header, Grid, Image, Icon
 } from 'semantic-ui-react';
@@ -28,7 +28,7 @@ const styles = {
     })
 };
 
-const Home = () => {
+const Home = (): ReactElement => {
     return (
         <Segment vertical className={styles.homeSegment}>
             <Container textAlign="center">

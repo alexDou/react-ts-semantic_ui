@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Segment, Container, Message } from 'semantic-ui-react';
 
-const StatusReport = ({ pending = true, ok = false, failure = false, message = '' }) => {
+import { SessionState } from '@t/app';
+
+const StatusReport = ({ pending = true, ok = false, message = '' }: SessionState): ReactElement => {
     if (ok) {
         return <></>;
     }

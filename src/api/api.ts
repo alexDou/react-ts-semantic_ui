@@ -1,4 +1,4 @@
-import config from '@api/api.config';
+import config from './api.config';
 import { SearchRepositories } from '@t/app';
 import { http } from '../transport';
 
@@ -16,7 +16,7 @@ const requests: SearchRepositories = {
         page = 1,
         orderBy = config.defaults.sort,
         per_page = config.defaults.per_page
-    ) => {
+    ): any => {
         const reqUrl = `${config.q}=${query}${config.sort}=${orderBy}${config.page}=${page}${config.per_page}=${per_page}`;
         const url = `${config.apiBaseUrl}${config.repos}` + encodeURI(reqUrl);
 

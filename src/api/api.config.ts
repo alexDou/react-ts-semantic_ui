@@ -8,7 +8,7 @@ const apiConfig: APIConfig = {
     per_page: '&per_page',
     page: '&page',
     defaults: {
-        sort: 'starts&order=desc',
+        sort: 'stars&order=desc',
         per_page: 10
     }
 };

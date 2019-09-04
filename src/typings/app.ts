@@ -1,6 +1,5 @@
 import React from 'react';
-import { AnyAction, ActionCreator, Dispatch, Action } from 'redux';
-import { ThunkAction } from 'redux-thunk';
+import { AnyAction, Dispatch } from 'redux';
 import { SemanticSIZES, SemanticCOLORS } from 'semantic-ui-react'
 
 export type APIConfig = {
@@ -16,17 +15,12 @@ export type APIConfig = {
     };
 };
 
-export interface ActionType {
+export interface StoreAction {
     type: string;
     payload?: any;
 }
 
-export type TDispatch = Dispatch<ActionType>;
-
-export type APIResponse = Promise<ActionType>;
-
-export type ActionCreate = ActionCreator<ThunkAction<Action, ReposActions, void, any>>
-export type ThunkActionCreate = ActionCreator<ThunkAction<Promise<Action>, ReposActions, void, any>>;
+export type APIResponse = Promise<StoreAction>;
 
 export interface SearchRepositories {
     search_repos: (
@@ -70,17 +64,13 @@ export interface SearchAction {
 export interface AppState {
     session: SessionState;
     repos: SearchState;
-    getSearch(query: string, page: number): TDispatch;
-    setSearchQuery(query: string): TDispatch;
-    setPage(page: number, shouldFetch: boolean): TDispatch;
+    getSearch: (query: string, page: number) => StoreAction;
+    setSearchQuery: (query: string) => StoreAction;
+    setPage: (page: number, shouldFetch: boolean) => StoreAction;
 }
 
 export interface ProjectsProps {
     num: number;
-}
-
-export interface ReposActions {
-    getSearch: () => (dispatch: Dispatch<AnyAction>) => Promise<void>;
 }
 
 export type RootProps = {

@@ -1,11 +1,13 @@
-import { TDispatch, ActionType, ThunkActionCreate } from '@t/app';
+import { StoreAction } from '@t/app';
 import { api } from '@api/index';
 import { session } from './';
 import { CALL_SEARCH, FIND_QUERY, TURN_PAGE } from '../action_types';
+import { Dispatch } from 'redux';
 
-const getSearch: ThunkActionCreate = (query: string, page: number) => {
 
-    return async (dispatch: TDispatch): Promise<ActionType> => {
+const getSearch = (query: string, page: number): any => {
+
+    return async (dispatch: Dispatch): Promise<StoreAction> => {
         try {
             dispatch(session.pending());
             const response: any = await api.search_repos(query, page);
@@ -14,7 +16,7 @@ const getSearch: ThunkActionCreate = (query: string, page: number) => {
                 page,
                 repos: response.data,
                 shouldFetch: false
-            }
+            };
 
             if (response.data.total_count === 0) {
                 payload.display = {}
@@ -31,14 +33,14 @@ const getSearch: ThunkActionCreate = (query: string, page: number) => {
     };
 };
 
-const setSearchQuery = (query: string) => {
+const setSearchQuery = (query: string): StoreAction => {
     return {
         type: FIND_QUERY,
         payload: { display: {}, page: 1, query, repos: {}, shouldFetch: true }
     };
 };
 
-const setPage = (page: number, shouldFetch: boolean) => {
+const setPage = (page: number, shouldFetch: boolean): StoreAction => {
     return {
         type: TURN_PAGE,
         payload: { page, shouldFetch }
